@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Catamaran:wght@400;500&family=Montserrat:wght@200&family=Poppins:wght@200;300;400&family=Raleway:wght@200;300&family=Tangerine:wght@400;700&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  padding: 0 30px;
+}
+
+#src-btn,
+.screenshot {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#src-btn {
+  bottom: 15px;
+  border: none;
+  outline: none;
+  background: lightskyblue;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.src-preview {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.src-preview.show {
+  display: block;
+}
+
+.src-preview .screenshot {
+  background: #fff;
+  width: 70%;
+  top: 50%;
+  aspect-ratio: 16/9;
+}
+
+.screenshot #close-btn {
+  position: absolute;
+  right: -25px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.screenshot img {
+  width: 100%;
+}
